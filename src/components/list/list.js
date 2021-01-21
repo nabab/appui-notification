@@ -2,7 +2,7 @@
   return {
     data(){
       return {
-        root: appui.plugins['appui-notifications'] + '/',
+        root: appui.plugins['appui-notification'] + '/',
         selected: {},
         currentFilter: 'all',
         listMounted: false,
@@ -108,10 +108,10 @@
       }
     },
     created(){
-      appui.register('appui-notifications', this);
+      appui.register('appui-notification', this);
     },
     beforeDestroy(){
-      appui.unregister('appui-notifications');
+      appui.unregister('appui-notification');
     },
     watch: {
       currentFilter(newVal){
@@ -140,7 +140,7 @@
     components: {
       listItem: {
         template: `
-<div :class="['bbn-bordered-bottom', 'bbn-spadded', 'bbn-p', 'bbn-reactive', 'appui-notifications-list-item', {
+<div :class="['bbn-bordered-bottom', 'bbn-spadded', 'bbn-p', 'bbn-reactive', 'appui-notification-list-item', {
         'bbn-state-selected': isSelected,
         'bbn-tertiary': !isSelected && !source.read
       }]"
@@ -180,7 +180,7 @@
         },
         data(){
           return {
-            cp: appui.getRegistered('appui-notifications'),
+            cp: appui.getRegistered('appui-notification'),
             checked: false
           }
         },

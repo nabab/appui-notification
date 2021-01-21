@@ -2,7 +2,7 @@
   return {
     data(){
       return {
-        root: appui.plugins['appui-notifications'] + '/',
+        root: appui.plugins['appui-notification'] + '/',
         mailSource: [{
           text: bbn._('Default'),
           value: 'default'

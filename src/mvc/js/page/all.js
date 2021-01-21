@@ -1,9 +1,9 @@
 (() => {
   return {
     data(){
-      let not = appui.getRegistered('appui-notifications');
+      let not = appui.getRegistered('appui-notification');
       return {
-        root: appui.plugins['appui-notifications'] + '/',
+        root: appui.plugins['appui-notification'] + '/',
         notifications: not,
         cfg: not.source.cfg
       }

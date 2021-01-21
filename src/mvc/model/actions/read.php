@@ -1,5 +1,5 @@
 <?php
-if ($notifications = new \bbn\appui\notifications($model->db)) {
+if ($notifications = new \bbn\appui\notification($model->db)) {
   if ((!empty($model->data['id']) && \bbn\str::is_uid($model->data['id']))
     || (!empty($model->data['ids']) && is_array($model->data['ids']))
   ) {

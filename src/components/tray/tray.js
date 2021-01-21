@@ -2,7 +2,7 @@
   return {
     data(){
       return {
-        root: appui.plugins['appui-notifications'] + '/',
+        root: appui.plugins['appui-notification'] + '/',
         isVisible: false,
         bottomCoord: '',
         selected: null,
@@ -17,8 +17,8 @@
     },
     methods: {
       openNotifications(){
-        if (appui.plugins['appui-notifications']){
-          bbn.fn.link(appui.plugins['appui-notifications'] + '/page/list');
+        if (appui.plugins['appui-notification']){
+          bbn.fn.link(appui.plugins['appui-notification'] + '/page/list');
           this.isVisible = false;
         }
       },
@@ -78,7 +78,7 @@
       }
     },
     created(){
-      appui.register('appui-notifications-tray', this);
+      appui.register('appui-notification-tray', this);
     },
     mounted(){
       this.$nextTick(() => {
@@ -86,7 +86,7 @@
       })
     },
     beforeDestroy(){
-      appui.unregister('appui-appui-notifications-tray');
+      appui.unregister('appui-appui-notification-tray');
     },
     watch: {
       /**
@@ -105,7 +105,7 @@
     components: {
       listItem: {
         template: `
-  <div :class="['bbn-bordered-bottom', 'bbn-spadded', 'bbn-p', 'bbn-reactive', 'appui-notifications-tray-item', {'bbn-state-selected': isSelected}]"
+  <div :class="['bbn-bordered-bottom', 'bbn-spadded', 'bbn-p', 'bbn-reactive', 'appui-notification-tray-item', {'bbn-state-selected': isSelected}]"
   >
     <div class="bbn-flex-width">
       <div class="bbn-flex-fill" @click="select">
@@ -144,7 +144,7 @@
         },
         data(){
           return {
-            cp: appui.getRegistered('appui-notifications-tray')
+            cp: appui.getRegistered('appui-notification-tray')
           }
         },
         computed: {

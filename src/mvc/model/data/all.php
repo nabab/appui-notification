@@ -1,5 +1,5 @@
 <?php
-$notifications = new \bbn\appui\notifications($model->db);
+$notifications = new \bbn\appui\notification($model->db);
 $ucfg = $model->inc->user->get_class_cfg();
 $ncfg = $notifications->get_class_cfg();
 $grid = new \bbn\appui\grid($model->db, $model->data, [

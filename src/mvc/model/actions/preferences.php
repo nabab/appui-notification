@@ -1,5 +1,5 @@
 <?php
-$notifications = new \bbn\appui\notifications($model->db);
+$notifications = new \bbn\appui\notification($model->db);
 if (!empty($model->data['id_option'])
   && isset($model->data['web'], $model->data['browser'], $model->data['mail'], $model->data['mobile'])
 ) {

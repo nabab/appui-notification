@@ -1,5 +1,5 @@
 <?php
-if (($notifications = new \bbn\appui\notifications($model->db))
+if (($notifications = new \bbn\appui\notification($model->db))
   && ($ncfg = $notifications->get_class_cfg())
   && !empty($model->data[$ncfg['arch']['notifications']['id']])
   && \bbn\str::is_uid($model->data[$ncfg['arch']['notifications']['id']])

@@ -10,7 +10,7 @@ $perms = [];
 foreach ($ctrl->inc->perm->full_options(APPUI_NOTIFICATIONS_ROOT.'page/') as $p) {
   $perms[$p['code']] = true;
 }
-$notifications = new \bbn\appui\notifications($ctrl->db);
+$notifications = new \bbn\appui\notification($ctrl->db);
 $ctrl
   ->set_icon('nf nf-mdi-comment_alert_outline')
   ->combo(_('Notifications'), [

@@ -1,4 +1,4 @@
-<bbn-splitter class="appui-notifications-list"
+<bbn-splitter class="appui-notification-list"
               orientation="horizontal"
 >
   <bbn-pane size="50%">
@@ -41,7 +41,7 @@
   </bbn-pane>
   <bbn-pane size="50%">
     <div v-if="hasSelected"
-         class="appui-notifications-list-notification bbn-flex-height"
+         class="appui-notification-list-notification bbn-flex-height"
     >
       <div class="bbn-header bbn-spadded bbn-b bbn-c bbn-no-border-left bbn-ellipsis"><?=_('NOTIFICATION')?></div>
       <div class="bbn-flex-fill bbn-alt-background">
@@ -58,7 +58,7 @@
           <div class="bbn-box">
               <div class="bbn-radius-top bbn-spadded bbn-c bbn-b bbn-bordered-bottom"><?=_('NOTIFIED')?></div>
               <div class="bbn-spadded">
-                <div class="appui-notifications-list-notification-notified">
+                <div class="appui-notification-list-notification-notified">
                   <div>
                     <i :class="['nf nf-mdi-web', 'bbn-xxxl', {
                           'bbn-green': selected.web,

@@ -1,6 +1,6 @@
 <?php
 if (!empty($model->data['data']['id_option'])
-  && ($notifications = new \bbn\appui\notifications($model->db))
+  && ($notifications = new \bbn\appui\notification($model->db))
   && ($id_user = $model->inc->user->get_id())
   && \bbn\str::is_uid($id_user)
 ) {

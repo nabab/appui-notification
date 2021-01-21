@@ -1,4 +1,4 @@
-<div class="appui-notifications-settings bbn-overlay bbn-flex-height">
+<div class="appui-notification-settings bbn-overlay bbn-flex-height">
   <div class="bbn-header bbn-spadded bbn-middle">
     <strong class="bbn-right-space"><?=_('GLOBAL SETTINGS')?>:</strong>
     <span class="bbn-right-sspace"><?=_('In-App')?></span>

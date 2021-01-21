@@ -1,16 +1,16 @@
-<div class="appui-notifications-tray bbn-unselectable">
+<div class="appui-notification-tray bbn-unselectable">
   <div @click="isVisible = !isVisible"
         :title="notificationsTitle"
         class="bbn-p bbn-rel"
   >
     <i :class="['nf nf-mdi-comment_alert_outline', 'bbn-lg', {'bbn-right-sspace': !!unread}]"></i>
     <span v-if="unread"
-          class="bbn-xs bbn-badge bbn-bg-blue bbn-white appui-notifications-tray-badge"
+          class="bbn-xs bbn-badge bbn-bg-blue bbn-white appui-notification-tray-badge"
           v-text="unread"
     ></span>
   </div>
   <div v-if="isVisible"
-       class="appui-notifications-tray-main bbn-widget bbn-flex-height"
+       class="appui-notification-tray-main bbn-widget bbn-flex-height"
        :style="{bottom: bottomCoord}"
   >
     <div class="bbn-header bbn-spadded bbn-no-border-top bbn-no-hborder bbn-flex-width">

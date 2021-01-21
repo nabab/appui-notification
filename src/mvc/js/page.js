@@ -2,7 +2,7 @@
 (() => {
   return {
     mounted(){
-      appui.register('appui-notifications', this);
+      appui.register('appui-notification', this);
     }
   }
 })()
