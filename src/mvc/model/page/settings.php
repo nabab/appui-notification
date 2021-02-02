@@ -1,7 +1,7 @@
 <?php
-$notifications = new \bbn\appui\notification($model->db);
-$id_user = $model->inc->user->get_id();
+$notifications = new \bbn\Appui\Notification($model->db);
+$id_user = $model->inc->user->getId();
 return [
-  'schema' => $notifications->get_class_cfg()['arch'],
-  'global' => array_merge(['id_option' => $model->inc->options->from_code('cfg', 'notification', 'appui')], $notifications->get_cfg($id_user)),
+  'schema' => $notifications->getClassCfg()['arch'],
+  'global' => array_merge(['id_option' => $model->inc->options->fromCode('cfg', 'notification', 'appui')], $notifications->getCfg($id_user)),
 ];

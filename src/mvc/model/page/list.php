@@ -1,9 +1,9 @@
 <?php
-if (($notifications = new \bbn\appui\notification($model->db))
-  && ($id_user = $model->inc->user->get_id())
-  && \bbn\str::is_uid($id_user)
+if (($notifications = new \bbn\Appui\Notification($model->db))
+  && ($id_user = $model->inc->user->getId())
+  && \bbn\Str::isUid($id_user)
 ) {
   return [
-    'schema' => $notifications->get_class_cfg()['arch']
+    'schema' => $notifications->getClassCfg()['arch']
   ];
 }

@@ -1,8 +1,8 @@
 <?php
-if (($notifications = new \bbn\appui\notification($model->db))
-  && ($ncfg = $notifications->get_class_cfg())
+if (($notifications = new \bbn\Appui\Notification($model->db))
+  && ($ncfg = $notifications->getClassCfg())
   && !empty($model->data[$ncfg['arch']['notifications']['id']])
-  && \bbn\str::is_uid($model->data[$ncfg['arch']['notifications']['id']])
+  && \bbn\Str::isUid($model->data[$ncfg['arch']['notifications']['id']])
 ) {
   return ['success' => $notifications->delete($model->data[$ncfg['arch']['notifications']['id']])];
 }

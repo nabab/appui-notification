@@ -1,5 +1,5 @@
 <?php
-/** @var $ctrl \bbn\mvc\controller */
+/** @var $ctrl \bbn\Mvc\Controller */
 if ( !\defined('APPUI_NOTIFICATIONS_ROOT') ){
-  define('APPUI_NOTIFICATIONS_ROOT', $ctrl->plugin_url('appui-notification').'/');
+  define('APPUI_NOTIFICATIONS_ROOT', $ctrl->pluginUrl('appui-notification').'/');
 }

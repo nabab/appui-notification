@@ -1,3 +1,3 @@
 <?php
-$notifications = new \bbn\appui\notification($ctrl->db);
+$notifications = new \bbn\Appui\Notification($ctrl->db);
 $notifications->process();

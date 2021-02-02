@@ -1,5 +1,5 @@
 <?php
-if ($notifications = new \bbn\appui\notification($model->db)) {
-  return $notifications->get_list_by_user($model->inc->user->get_id(), $model->data);
+if ($notifications = new \bbn\Appui\Notification($model->db)) {
+  return $notifications->getListByUser($model->inc->user->getId(), $model->data);
 }
 return ['success' => false];
