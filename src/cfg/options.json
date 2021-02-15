@@ -1,4 +1,4 @@
-[{
+{
   "id_parent": "appui",
   "code": "notifications",
   "text": "Notifications",
@@ -33,4 +33,4 @@
     "code": "list",
     "text": "Notifications"
   }]
-}]
+}
