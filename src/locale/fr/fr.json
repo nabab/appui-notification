@@ -1,20 +1,21 @@
 {
-    "components\/list\/list": {
+    "components\/list": {
         "Show all notifications": "",
         "Show unread notifications": "",
         "Show read notifications": "",
         "Are you sure you want to set the selected notifications as read?": "",
         "Are you sure you want to set all notifications as read?": ""
     },
-    "components\/settings\/settings": {
+    "components\/settings": {
         "Default": "D\u00e9faut",
         "Immediately": "",
         "Daily": "",
         "No email": ""
     },
-    "components\/tray\/tray": {
+    "components\/tray": {
         "You have": "",
         "unread notifications": "",
+        "Notifications": "Notifications",
         "Mark it as read": ""
     },
     "mvc\/page\/all": {
