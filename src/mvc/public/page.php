@@ -7,13 +7,15 @@
 /** @var $ctrl \bbn\Mvc\Controller */
 $ctrl->obj->url = APPUI_NOTIFICATIONS_ROOT . 'page';
 $perms = [];
-foreach ($ctrl->inc->perm->fullOptions(APPUI_NOTIFICATIONS_ROOT.'page/') as $p) {
-  $perms[$p['code']] = true;
+if ( $list = $ctrl->inc->options->fullOptions('page/', 'access', 'permissions', 'notification', 'appui') ){
+  foreach ($list as $p) {
+    $perms[$p['code']] = $ctrl->inc->perm->has($p['id']);
+  }
 }
 $notifications = new \bbn\Appui\Notification($ctrl->db);
 $ctrl
   ->setIcon('nf nf-mdi-comment_alert_outline')
   ->combo(_('Notifications'), [
     'permissions' => $perms,
-    'cfg' => $notifications->getClassCfg() 
+    'cfg' => $notifications->getClassCfg()
   ]);
