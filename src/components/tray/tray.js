@@ -156,7 +156,7 @@
           html2text: bbn.fn.html2text,
           formatDateTime(date){
             if (date) {
-              return moment(date).format('DD/MM/YYYY HH:mm')
+              return dayjs(date).format('DD/MM/YYYY HH:mm')
             }
             return ''
           },

@@ -38,21 +38,21 @@
       html2text: bbn.fn.html2text,
       formatDate(date, unix){
         if (date) {
-          let mom = unix ? moment.unix(date) : moment(date);
+          let mom = unix ? dayjs.unix(date) : dayjs(date);
           return mom.format('DD/MM/YYYY')
         }
         return ''
       },
       formatDateTime(date, unix){
         if (date) {
-          let mom = unix ? moment.unix(date) : moment(date);
+          let mom = unix ? dayjs.unix(date) : dayjs(date);
           return mom.format('DD/MM/YYYY HH:mm')
         }
         return ''
       },
       formatTime(date, unix){
         if (date) {
-          let mom = unix ? moment.unix(date) : moment(date);
+          let mom = unix ? dayjs.unix(date) : dayjs(date);
           return mom.format('HH:mm')
         }
         return ''
@@ -62,7 +62,7 @@
         if (!notification[this.source.schema.notifications.read]) {
           this.post(this.root + 'actions/read', {id: notification[this.source.schema.notifications.id]}, d => {
             if (d.success) {
-              this.$set(notification, this.source.schema.notifications.read, moment().format('x'));
+              this.$set(notification, this.source.schema.notifications.read, dayjs().format('x'));
             }
           })
         }
@@ -71,7 +71,7 @@
         this.confirm(bbn._('Are you sure you want to set the selected notifications as read?'), () => {
           this.post(this.root + 'actions/read', {ids: this.toRead}, d => {
             if (d.success) {
-              let mom = moment().format('x');
+              let mom = dayjs().format('x');
               bbn.fn.each(this.toRead, id => {
                 let prop = 'data.' + this.source.schema.notifications.id,
                     not = bbn.fn.getRow(this.items, {[prop]: id});
@@ -92,7 +92,7 @@
         this.confirm(bbn._('Are you sure you want to set all notifications as read?'), () => {
           this.post(this.root + 'actions/read', {all: true}, d => {
             if (d.success) {
-              let mom = moment().format('x');
+              let mom = dayjs().format('x');
               bbn.fn.each(this.items, item => {
                 if (item.data && bbn.fn.isNull(item.data.read)) {
                   this.$set(item.data, 'read', mom);
