@@ -5,12 +5,6 @@
         "columns": [
           "id"
         ],
-        "ref_db": null,
-        "ref_table": null,
-        "ref_column": null,
-        "constraint": null,
-        "update": null,
-        "delete": null,
         "unique": 1
       },
       "id_content_2": {
@@ -18,19 +12,12 @@
           "id_content",
           "id_user"
         ],
-        "ref_db": null,
-        "ref_table": null,
-        "ref_column": null,
-        "constraint": "bbn_notifications_ibfk_1",
-        "update": "CASCADE",
-        "delete": "CASCADE",
         "unique": 1
       },
       "id_content": {
         "columns": [
           "id_content"
         ],
-        "ref_db": null,
         "ref_table": "bbn_notifications_content",
         "ref_column": "id",
         "constraint": "bbn_notifications_ibfk_1",
@@ -42,7 +29,6 @@
         "columns": [
           "id_user"
         ],
-        "ref_db": null,
         "ref_table": "bbn_users",
         "ref_column": "id",
         "constraint": "bbn_notifications_ibfk_2",
@@ -69,145 +55,121 @@
         "type": "binary",
         "null": 0,
         "key": "PRI",
-        "extra": "",
         "signed": true,
-        "virtual": false,
-        "generation": "",
         "maxlength": 16
       },
       "id_content": {
         "type": "binary",
         "null": 0,
         "key": "MUL",
-        "extra": "",
         "signed": true,
-        "virtual": false,
-        "generation": "",
         "maxlength": 16
       },
       "id_user": {
         "type": "binary",
         "null": 0,
         "key": "MUL",
-        "extra": "",
         "signed": true,
-        "virtual": false,
-        "generation": "",
         "maxlength": 16
       },
       "web": {
         "type": "decimal",
         "null": 1,
-        "key": null,
-        "extra": "",
         "signed": false,
-        "virtual": false,
-        "generation": "",
         "default": "NULL",
+        "defaultExpression": 1,
         "maxlength": 14,
         "decimals": 4
       },
       "browser": {
         "type": "decimal",
         "null": 1,
-        "key": null,
-        "extra": "",
         "signed": false,
-        "virtual": false,
-        "generation": "",
         "default": "NULL",
+        "defaultExpression": 1,
         "maxlength": 14,
         "decimals": 4
       },
       "mail": {
         "type": "decimal",
         "null": 1,
-        "key": null,
-        "extra": "",
         "signed": false,
-        "virtual": false,
-        "generation": "",
         "default": "NULL",
+        "defaultExpression": 1,
         "maxlength": 14,
         "decimals": 4
       },
       "mobile": {
         "type": "decimal",
         "null": 1,
-        "key": null,
-        "extra": "",
         "signed": false,
-        "virtual": false,
-        "generation": "",
         "default": "NULL",
+        "defaultExpression": 1,
         "maxlength": 14,
         "decimals": 4
       },
       "read": {
         "type": "decimal",
         "null": 1,
-        "key": null,
-        "extra": "",
         "signed": false,
-        "virtual": false,
-        "generation": "",
         "default": "NULL",
+        "defaultExpression": 1,
         "maxlength": 14,
         "decimals": 4
       },
       "dt_web": {
         "type": "datetime",
         "null": 1,
-        "key": null,
         "extra": "VIRTUAL GENERATED",
         "signed": true,
         "virtual": true,
         "generation": "from_unixtime(`web`)",
-        "default": "NULL"
+        "default": "NULL",
+        "defaultExpression": 1
       },
       "dt_browser": {
         "position": 10,
         "type": "datetime",
         "null": 1,
-        "key": null,
         "extra": "VIRTUAL GENERATED",
         "signed": true,
         "virtual": true,
         "generation": "from_unixtime(`browser`)",
-        "default": "NULL"
+        "default": "NULL",
+        "defaultExpression": 1
       },
       "dt_mail": {
         "position": 11,
         "type": "datetime",
         "null": 1,
-        "key": null,
         "extra": "VIRTUAL GENERATED",
         "signed": true,
         "virtual": true,
         "generation": "from_unixtime(`mail`)",
-        "default": "NULL"
+        "default": "NULL",
+        "defaultExpression": 1
       },
       "dt_mobile": {
         "position": 12,
         "type": "datetime",
         "null": 1,
-        "key": null,
         "extra": "VIRTUAL GENERATED",
         "signed": true,
         "virtual": true,
         "generation": "from_unixtime(`mobile`)",
-        "default": "NULL"
+        "default": "NULL",
+        "defaultExpression": 1
       },
       "dt_read": {
         "position": 13,
         "type": "datetime",
         "null": 1,
-        "key": null,
         "extra": "VIRTUAL GENERATED",
         "signed": true,
         "virtual": true,
         "generation": "from_unixtime(`read`)",
-        "default": "NULL"
+        "default": "NULL",
+        "defaultExpression": 1
       }
     }
   },
@@ -217,19 +179,12 @@
         "columns": [
           "id"
         ],
-        "ref_db": null,
-        "ref_table": null,
-        "ref_column": null,
-        "constraint": null,
-        "update": null,
-        "delete": null,
         "unique": 1
       },
       "id_option": {
         "columns": [
           "id_option"
         ],
-        "ref_db": null,
         "ref_table": "bbn_options",
         "ref_column": "id",
         "constraint": "bbn_notifications_content_ibfk_1",
@@ -251,49 +206,34 @@
         "type": "binary",
         "null": 0,
         "key": "PRI",
-        "extra": "",
         "signed": true,
-        "virtual": false,
-        "generation": "",
         "maxlength": 16
       },
       "id_option": {
         "type": "binary",
         "null": 1,
         "key": "MUL",
-        "extra": "",
         "signed": true,
-        "virtual": false,
-        "generation": "",
         "default": "NULL",
+        "defaultExpression": 1,
         "maxlength": 16
       },
       "title": {
         "type": "varchar",
         "null": 0,
-        "key": null,
-        "extra": "",
         "signed": true,
-        "virtual": false,
-        "generation": "",
         "maxlength": 255
       },
       "content": {
         "type": "mediumtext",
         "null": 0,
-        "key": null,
-        "extra": "",
         "signed": true,
-        "virtual": false,
         "generation": ""
       },
       "creation": {
         "type": "datetime",
         "null": 0,
-        "key": null,
-        "extra": "",
         "signed": true,
-        "virtual": false,
         "generation": ""
       }
     }
