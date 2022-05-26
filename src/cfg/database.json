@@ -55,21 +55,18 @@
         "type": "binary",
         "null": 0,
         "key": "PRI",
-        "signed": true,
         "maxlength": 16
       },
       "id_content": {
         "type": "binary",
         "null": 0,
         "key": "MUL",
-        "signed": true,
         "maxlength": 16
       },
       "id_user": {
         "type": "binary",
         "null": 0,
         "key": "MUL",
-        "signed": true,
         "maxlength": 16
       },
       "web": {
@@ -121,51 +118,42 @@
         "type": "datetime",
         "null": 1,
         "extra": "VIRTUAL GENERATED",
-        "signed": true,
         "virtual": true,
         "generation": "from_unixtime(`web`)",
         "default": "NULL",
         "defaultExpression": 1
       },
       "dt_browser": {
-        "position": 10,
         "type": "datetime",
         "null": 1,
         "extra": "VIRTUAL GENERATED",
-        "signed": true,
         "virtual": true,
         "generation": "from_unixtime(`browser`)",
         "default": "NULL",
         "defaultExpression": 1
       },
       "dt_mail": {
-        "position": 11,
         "type": "datetime",
         "null": 1,
         "extra": "VIRTUAL GENERATED",
-        "signed": true,
         "virtual": true,
         "generation": "from_unixtime(`mail`)",
         "default": "NULL",
         "defaultExpression": 1
       },
       "dt_mobile": {
-        "position": 12,
         "type": "datetime",
         "null": 1,
         "extra": "VIRTUAL GENERATED",
-        "signed": true,
         "virtual": true,
         "generation": "from_unixtime(`mobile`)",
         "default": "NULL",
         "defaultExpression": 1
       },
       "dt_read": {
-        "position": 13,
         "type": "datetime",
         "null": 1,
         "extra": "VIRTUAL GENERATED",
-        "signed": true,
         "virtual": true,
         "generation": "from_unixtime(`read`)",
         "default": "NULL",
@@ -206,14 +194,12 @@
         "type": "binary",
         "null": 0,
         "key": "PRI",
-        "signed": true,
         "maxlength": 16
       },
       "id_option": {
         "type": "binary",
         "null": 1,
         "key": "MUL",
-        "signed": true,
         "default": "NULL",
         "defaultExpression": 1,
         "maxlength": 16
@@ -221,19 +207,16 @@
       "title": {
         "type": "varchar",
         "null": 0,
-        "signed": true,
         "maxlength": 255
       },
       "content": {
         "type": "mediumtext",
         "null": 0,
-        "signed": true,
         "generation": ""
       },
       "creation": {
         "type": "datetime",
         "null": 0,
-        "signed": true,
         "generation": ""
       }
     }
