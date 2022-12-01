@@ -1,5 +1,4 @@
 <?php
-return [];
 $id_user = $model->inc->user->getId();
 $path_web = \bbn\Mvc::getUserDataPath($id_user, 'appui-notification') . 'web/' . $model->inc->user->getOsession('id_session');
 $path_browser = \bbn\Mvc::getUserDataPath($id_user, 'appui-notification') . 'browser/' . $model->inc->user->getOsession('id_session');
