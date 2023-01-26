@@ -3,7 +3,7 @@
         :title="notificationsTitle"
         class="bbn-p bbn-rel"
   >
-    <i :class="['nf nf-mdi-comment_alert_outline', 'bbn-lg', {'bbn-right-sspace': !!unread}]"></i>
+    <i :class="['nf nf-mdi-comment_alert_outline', {'bbn-right-sspace': !!unread}]"></i>
     <span v-if="unread"
           class="bbn-xs bbn-badge bbn-bg-blue bbn-white appui-notification-tray-badge"
           v-text="unread"
