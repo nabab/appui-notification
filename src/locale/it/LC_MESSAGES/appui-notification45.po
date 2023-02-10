@@ -1,0 +1,219 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1\n"
+"Report-Msgid-Bugs-To: info@bbn.so\n"
+"last-Translator: BBN Solutions <support@bbn.solutions>\n"
+"Language-Team: IT <IT@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-02-10 15:23+0100\n"
+"POT-Revision-Date: 2023-02-10 15:23+0100\n"
+"Language: it\n"
+"X-Domain: appui-notification45\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.js
+msgid "Show all notifications"
+msgstr "Mostra tutte le notifiche"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.js
+msgid "Show unread notifications"
+msgstr "Mostra le notifiche non lette"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.js
+msgid "Show read notifications"
+msgstr "Mostra le notifiche lette"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.js
+msgid "Are you sure you want to set the selected notifications as read?"
+msgstr "Sei sicuro di voler impostare le notifiche selezionate come lette?"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.js
+msgid "Are you sure you want to set all notifications as read?"
+msgstr "Sei sicuro di voler impostare tutte le notifiche come lette?"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.php
+msgid "Filter notifications"
+msgstr "Filtra notifiche"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.php
+msgid "LIST"
+msgstr "Lista"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.php
+msgid "Set all notifications as read"
+msgstr "Imposta tutte le notifiche come lette"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.php
+msgid "Set the selected notifications as read"
+msgstr "Imposta le notifiche selezionate come lette"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.php
+msgid "NOTIFICATION"
+msgstr "NOTIFICA"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.php
+msgid "NOTIFIED"
+msgstr "NOTIFICATO"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "In-App"
+msgstr "In-App"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "Browser"
+msgstr "Navigatore"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "Mail"
+msgstr "Posta"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "Mobile"
+msgstr "Mobile"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/list/list.php
+msgid "Select a notification"
+msgstr "Seleziona una notifica"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.js
+msgid "Default"
+msgstr "Predefinito"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.js
+msgid "Immediately"
+msgstr "Immediatamente"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.js
+msgid "Daily"
+msgstr "Giornalmente"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.js
+msgid "No email"
+msgstr "Nessuna eMail"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.php
+msgid "GLOBAL SETTINGS"
+msgstr "IMPOSTAZIONI GLOBALI"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.php
+msgid "CATEGORY SETTINGS"
+msgstr "IMPOSTAZIONI CATEGORIA"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.php
+msgid "No category selected"
+msgstr "Nessuna categoria selezionata"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.php
+msgid "CATEGORIES LIST"
+msgstr "ELENCO CATEGORIE"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/tray/tray.php
+msgid "NOTIFICATIONS"
+msgstr "Notifiche"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.php
+msgid "Name"
+msgstr "Nome"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/settings/settings.php
+msgid "Select a category"
+msgstr "Seleziona una categoria"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/tray/tray.js
+msgid "You have"
+msgstr "Tu hai"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/tray/tray.js
+msgid "unread notifications"
+msgstr "notifiche non lette"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/tray/tray.js
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/public/page.php
+msgid "Notifications"
+msgstr "Notifiche"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/tray/tray.js
+msgid "Mark it as read"
+msgstr "Segna come letto"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/tray/tray.php
+msgid "Mark all notifications as read"
+msgstr "Segna tutte le notifiche come lette"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/tray/tray.php
+msgid "Open notifications page"
+msgstr "Apri la pagina delle notifiche"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/components/tray/tray.php
+msgid "Close"
+msgstr "Chiudi"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/public/page/list.php
+msgid "Notifications list"
+msgstr "Elenco notifiche"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/public/page/settings.php
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page.php
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/public/page/all.php
+msgid "All notifications"
+msgstr "Tutte le notifiche"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "ID"
+msgstr "ID"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "ID Content"
+msgstr "ID Contenuto"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "ID Option"
+msgstr "ID Opzione"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "Creation"
+msgstr "Creazione"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "User"
+msgstr "Utente"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "Title"
+msgstr "Titolo"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "Content"
+msgstr "Contenuto"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "Read"
+msgstr "Leggere"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/html/page/all.php
+msgid "Delete"
+msgstr "Elimina"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/js/page/all.js
+msgid "Are you sure you want to delete this notification?"
+msgstr "Sei sicuro di voler eliminare questa notifica?"
+
+#: /home/okrim/_COMPOSER/dev/vendor/bbn/appui-notification/src/mvc/public/alert.php
+msgid "My alerts"
+msgstr "I miei avvisi"
