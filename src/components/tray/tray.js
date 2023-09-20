@@ -86,7 +86,7 @@
       })
     },
     beforeDestroy(){
-      appui.unregister('appui-appui-notification-tray');
+      appui.unregister('appui-notification-tray');
     },
     watch: {
       /**
