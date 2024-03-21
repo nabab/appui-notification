@@ -7,16 +7,16 @@
         <bbn-context tag="i"
                      :source="filters"
                      class="nf nf-fa-filter bbn-m bbn-p"
-                     title="<?=_('Filter notifications')?>"
+                     title="<?= _('Filter notifications') ?>"
         ></bbn-context>
-        <span class="bbn-b bbn-flex-fill bbn-c"><?=_('LIST')?></span>
+        <span class="bbn-b bbn-flex-fill bbn-c"><?= _('LIST') ?></span>
         <i class="nf nf-mdi-read bbn-m bbn-p"
-           title="<?=_('Set all notifications as read')?>"
+           title="<?= _('Set all notifications as read') ?>"
            @click="setAllRead"
         ></i>
         <i v-if="toRead.length"
            class="nf nf-mdi-marker_check bbn-m bbn-p bbn-left-sspace"
-           title="<?=_('Set the selected notifications as read')?>"
+           title="<?= _('Set the selected notifications as read') ?>"
            @click="setRead"
         ></i>
       </div>
@@ -43,7 +43,7 @@
     <div v-if="hasSelected"
          class="appui-notification-list-notification bbn-flex-height"
     >
-      <div class="bbn-header bbn-spadded bbn-b bbn-c bbn-no-border-left bbn-ellipsis"><?=_('NOTIFICATION')?></div>
+      <div class="bbn-header bbn-spadded bbn-b bbn-c bbn-no-border-left bbn-ellipsis"><?= _('NOTIFICATION') ?></div>
       <div class="bbn-flex-fill bbn-alt-background">
         <bbn-scroll>
           <div class="bbn-padded">
@@ -56,7 +56,7 @@
               ></div>
             </div>
           <div class="bbn-box">
-              <div class="bbn-radius-top bbn-spadded bbn-c bbn-b bbn-bordered-bottom"><?=_('NOTIFIED')?></div>
+              <div class="bbn-radius-top bbn-spadded bbn-c bbn-b bbn-bordered-bottom"><?= _('NOTIFIED') ?></div>
               <div class="bbn-spadded">
                 <div class="appui-notification-list-notification-notified">
                   <div>
@@ -64,7 +64,7 @@
                           'bbn-green': selected.web,
                           'bbn-red': !selected.web
                         }]"
-                        title="<?=_('In-App')?>"
+                        title="<?= _('In-App') ?>"
                     ></i>
                   </div>
                   <div>
@@ -72,7 +72,7 @@
                           'bbn-green': selected.browser,
                           'bbn-red': !selected.browser
                         }]"
-                        title="<?=_('Browser')?>"
+                        title="<?= _('Browser') ?>"
                     ></i>
                   </div>
                   <div>
@@ -80,7 +80,7 @@
                           'bbn-green': selected.mail,
                           'bbn-red': !selected.mail
                         }]"
-                        title="<?=_('Mail')?>"
+                        title="<?= _('Mail') ?>"
                     ></i>
                   </div>
                   <div>
@@ -88,7 +88,7 @@
                           'bbn-green': selected.mobile,
                           'bbn-red': !selected.mobile
                         }]"
-                        title="<?=_('Mobile')?>"
+                        title="<?= _('Mobile') ?>"
                     ></i>
                   </div>
                   <div v-if="selected.web">
@@ -154,7 +154,7 @@
     <div v-else
          class="bbn-middle bbn-overlay"
     >
-      <span class="bbn-xl bbn-b"><i class="nf nf-fa-arrow_left bbn-right-space"></i><?=_('Select a notification')?></span>
+      <span class="bbn-xl bbn-b"><i class="nf nf-fa-arrow_left bbn-right-space"></i><?= _('Select a notification') ?></span>
     </div>
   </bbn-pane>
 </bbn-splitter>
