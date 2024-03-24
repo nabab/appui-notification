@@ -10,7 +10,7 @@
     },
     computed: {
       users(){
-        return appui.app.users
+        return appui.users
       }
     },
     methods: {
