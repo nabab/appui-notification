@@ -5,7 +5,7 @@
 >
   <bbns-container url="list"
                   title="<?= _("Notifications list") ?>"
-                  :static="true"
+                  :fixed="true"
                   :load="true"
                   component="appui-notification-list"
                   icon="nf nf-fa-home"
@@ -14,7 +14,7 @@
   ></bbns-container>
   <bbns-container url="settings"
                   title="<?= _("Settings") ?>"
-                  :static="true"
+                  :fixed="true"
                   :load="true"
                   component="appui-notification-settings"
                   icon="nf nf-mdi-settings"
@@ -23,7 +23,7 @@
   ></bbns-container>
   <bbns-container url="all"
                   title="<?= _("All notifications") ?>"
-                  :static="true"
+                  :fixed="true"
                   :load="true"
                   icon="nf nf-mdi-table"
                   :notext="true"
