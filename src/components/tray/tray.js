@@ -50,7 +50,7 @@
                   if (d.success) {
                     appui.messageChannel(appui.primaryChannel, {
                       function: (id) => {
-                        let not = appui.getRef('notification'),
+                        let not = appui.getRegistered('notification'),
                             idx = bbn.fn.search(not.items, {'data.id': id});
                         if (idx > -1) {
                           not.close(not.items[idx].id);
