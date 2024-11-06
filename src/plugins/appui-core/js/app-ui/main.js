@@ -2,7 +2,8 @@
   return {
     data() {
       return {
-        root: appui.plugins['appui-notification'] + '/'
+        root: appui.plugins['appui-notification'] + '/',
+        container: document.querySelector('.bbn-appui-center')
       };
     },
     mounted() {
