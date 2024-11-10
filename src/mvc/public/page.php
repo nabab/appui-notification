@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $ctrl \bbn\Mvc\Controller */
+/** @var bbn\Mvc\Controller $ctrl */
 $ctrl->obj->url = APPUI_NOTIFICATIONS_ROOT . 'page';
 $perms = [];
 if ( $list = $ctrl->inc->options->fullOptions('page/', 'access', 'permissions', 'notification', 'appui') ){
