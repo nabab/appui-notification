@@ -2,5 +2,6 @@
 <div>
   <bbn-notification ref="notification"
                     :z-index="15"
-                    :container="container"/>
+                    :container="container"
+                    @hook:mounted="onNotificationMounted"/>
 </div>

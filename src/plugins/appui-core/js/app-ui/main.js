@@ -6,8 +6,10 @@
         container: document.querySelector('.bbn-appui-center')
       };
     },
-    mounted() {
-      appui.register('notification', this.getRef('notification'));
+    methods: {
+      onNotificationMounted(){
+        appui.register('notification', this.getRef('notification'));
+      }
     },
     beforeDestroy() {
       appui.unregister('notification');
