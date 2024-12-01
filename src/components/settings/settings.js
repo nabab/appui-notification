@@ -105,7 +105,7 @@
     components: {
       category: {
         template: `
-          <div class="bbn-c bbn-xspadded bbn-bordered-bottom" v-text="source.text"></div>
+          <div class="bbn-c bbn-xspadding bbn-border-bottom" v-text="source.text"></div>
         `,
         props: {
           source: {

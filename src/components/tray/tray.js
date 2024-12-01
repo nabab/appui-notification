@@ -106,8 +106,8 @@
       listItem: {
         template: `
 <div :class="[
-  'bbn-bordered-bottom',
-  'bbn-spadded',
+  'bbn-border-bottom',
+  'bbn-spadding',
   'bbn-p',
   'bbn-reactive',
   'appui-notification-tray-item',

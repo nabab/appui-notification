@@ -13,7 +13,7 @@
        class="appui-notification-tray-main bbn-widget bbn-flex-height"
        :style="{bottom: bottomCoord}"
   >
-    <div class="bbn-header bbn-spadded bbn-no-border-top bbn-no-hborder bbn-flex-width">
+    <div class="bbn-header bbn-spadding bbn-no-border-top bbn-no-hborder bbn-flex-width">
       <div class="bbn-flex-fill bbn-l bbn-unselectable">
         <span class="bbn-b" v-text="_('NOTIFICATIONS')"></span>
         <span>(</span>

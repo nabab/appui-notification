@@ -1,5 +1,5 @@
 <div class="appui-notification-settings bbn-overlay bbn-flex-height">
-  <div class="bbn-header bbn-spadded bbn-middle">
+  <div class="bbn-header bbn-spadding bbn-middle">
     <strong class="bbn-right-space"><?= _('GLOBAL SETTINGS') ?>:</strong>
     <span class="bbn-right-sspace"><?= _('In-App') ?></span>
     <bbn-checkbox v-model="source.global.web"
@@ -27,15 +27,15 @@
   </div>
   <div class="bbn-flex-fill">
     <bbn-splitter orientation="horizontal">
-      <bbn-pane :size="200" class="bbn-bordered-right">
+      <bbn-pane :size="200" class="bbn-border-right">
         <bbn-splitter orientation="vertical">
           <bbn-pane :size="150">
             <div class="bbn-flex-height">
-              <div class="bbn-header bbn-spadded bbn-c bbn-b bbn-s bbn-no-border-top bbn-no-border-right"><?= _('CATEGORY SETTINGS') ?></div>
+              <div class="bbn-header bbn-spadding bbn-c bbn-b bbn-s bbn-no-border-top bbn-no-border-right"><?= _('CATEGORY SETTINGS') ?></div>
               <div class="bbn-flex-fill">
                 <div class="bbn-overlay bbn-middle bbn-alt-background">
                   <div v-if="categoryIsSelected"
-                       class="bbn-grid-fields bbn-spadded bbn-vmiddle"
+                       class="bbn-grid-fields bbn-spadding bbn-vmiddle"
                   >
                     <span><?= _('In-App') ?></span>
                     <bbn-checkbox v-model="category.web"
@@ -65,7 +65,7 @@
           </bbn-pane>
           <bbn-pane>
             <div class="bbn-flex-height">
-              <div class="bbn-header bbn-spadded bbn-c bbn-b bbn-s bbn-no-border-right"><?= _('CATEGORIES LIST') ?></div>
+              <div class="bbn-header bbn-spadding bbn-c bbn-b bbn-s bbn-no-border-right"><?= _('CATEGORIES LIST') ?></div>
               <div class="bbn-flex-fill">
                 <bbn-scroll>
                   <bbn-list :source="root + 'data/settings/categories'"
@@ -84,7 +84,7 @@
       <bbn-pane>
         <div class="bbn-flex-height">
           <div v-if="categoryIsSelected"
-               class="bbn-header bbn-b bbn-c bbn-s bbn-spadded bbn-no-border-top bbn-no-border-bottom bbn-no-border-left"
+               class="bbn-header bbn-b bbn-c bbn-s bbn-spadding bbn-no-border-top bbn-no-border-bottom bbn-no-border-left"
           >
             <span v-text="category.text.toUpperCase() + ' '"></span><?= _('NOTIFICATIONS') ?>
           </div>

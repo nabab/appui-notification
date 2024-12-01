@@ -140,7 +140,7 @@
     components: {
       listItem: {
         template: `
-<div :class="['bbn-bordered-bottom', 'bbn-spadded', 'bbn-p', 'bbn-reactive', 'appui-notification-list-item', {
+<div :class="['bbn-border-bottom', 'bbn-spadding', 'bbn-p', 'bbn-reactive', 'appui-notification-list-item', {
         'bbn-state-selected': isSelected,
         'bbn-tertiary': !isSelected && !source.read
       }]"

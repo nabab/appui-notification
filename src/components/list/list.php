@@ -3,7 +3,7 @@
 >
   <bbn-pane size="50%">
     <div class="bbn-flex-height">
-      <div class="bbn-header bbn-spadded bbn-flex-width bbn-vmiddle">
+      <div class="bbn-header bbn-spadding bbn-flex-width bbn-vmiddle">
         <bbn-context tag="i"
                      :source="filters"
                      class="nf nf-fa-filter bbn-m bbn-p"
@@ -20,7 +20,7 @@
            @click="setRead"
         ></i>
       </div>
-      <div class="bbn-flex-fill bbn-bordered-right">
+      <div class="bbn-flex-fill bbn-border-right">
         <bbn-scroll axis="y">
           <bbn-list :source="root + 'data/list'"
                     :component="$options.components.listItem"
@@ -43,21 +43,21 @@
     <div v-if="hasSelected"
          class="appui-notification-list-notification bbn-flex-height"
     >
-      <div class="bbn-header bbn-spadded bbn-b bbn-c bbn-no-border-left bbn-ellipsis"><?= _('NOTIFICATION') ?></div>
+      <div class="bbn-header bbn-spadding bbn-b bbn-c bbn-no-border-left bbn-ellipsis"><?= _('NOTIFICATION') ?></div>
       <div class="bbn-flex-fill bbn-alt-background">
         <bbn-scroll>
-          <div class="bbn-padded">
+          <div class="bbn-padding">
             <div class="bbn-box bbn-bottom-space">
-              <div class="bbn-radius-top bbn-spadded bbn-c bbn-b bbn-bordered-bottom"
+              <div class="bbn-radius-top bbn-spadding bbn-c bbn-b bbn-border-bottom"
                   v-html="selected.title"
               ></div>
-              <div class="bbn-lpadded"
+              <div class="bbn-lpadding"
                     v-html="selected.content"
               ></div>
             </div>
           <div class="bbn-box">
-              <div class="bbn-radius-top bbn-spadded bbn-c bbn-b bbn-bordered-bottom"><?= _('NOTIFIED') ?></div>
-              <div class="bbn-spadded">
+              <div class="bbn-radius-top bbn-spadding bbn-c bbn-b bbn-border-bottom"><?= _('NOTIFIED') ?></div>
+              <div class="bbn-spadding">
                 <div class="appui-notification-list-notification-notified">
                   <div>
                     <i :class="['nf nf-mdi-web', 'bbn-xxxl', {
