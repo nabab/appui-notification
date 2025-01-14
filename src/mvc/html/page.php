@@ -4,7 +4,7 @@
             :nav="true"
 >
   <bbns-container url="list"
-                  title="<?= _("Notifications list") ?>"
+                  label="<?= _("Notifications list") ?>"
                   :fixed="true"
                   :load="true"
                   component="appui-notification-list"
@@ -13,7 +13,7 @@
                   v-if="source.permissions.list"
   ></bbns-container>
   <bbns-container url="settings"
-                  title="<?= _("Settings") ?>"
+                  label="<?= _("Settings") ?>"
                   :fixed="true"
                   :load="true"
                   component="appui-notification-settings"
@@ -22,7 +22,7 @@
                   v-if="source.permissions.settings"
   ></bbns-container>
   <bbns-container url="all"
-                  title="<?= _("All notifications") ?>"
+                  label="<?= _("All notifications") ?>"
                   :fixed="true"
                   :load="true"
                   icon="nf nf-mdi-table"

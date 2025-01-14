@@ -5,54 +5,54 @@
            ref="table"
 >
   <bbns-column :field="cfg.arch.notifications.id"
-               title="<?= _('ID') ?>"
+               label="<?= _('ID') ?>"
                :hidden="true"
   ></bbns-column>
   <bbns-column :field="cfg.arch.notifications.id_content"
-               title="<?= _('ID Content') ?>"
+               label="<?= _('ID Content') ?>"
                :hidden="true"
   ></bbns-column>
   <bbns-column :field="cfg.arch.content.id_option"
-               title="<?= _('ID Option') ?>"
+               label="<?= _('ID Option') ?>"
                :hidden="true"
   ></bbns-column>
   <bbns-column :field="cfg.arch.content.creation"
-               title="<?= _('Creation') ?>"
+               label="<?= _('Creation') ?>"
                type="datetime"
                cls="bbn-c"
   ></bbns-column>
   <bbns-column :field="cfg.arch.notifications.id_user"
-               title="<?= _('User') ?>"
+               label="<?= _('User') ?>"
                :source="users"
   ></bbns-column>
   <bbns-column :field="cfg.arch.content.title"
-               title="<?= _('Title') ?>"
+               label="<?= _('Title') ?>"
   ></bbns-column>
   <bbns-column :field="cfg.arch.content.content"
-               title="<?= _('Content') ?>"
+               label="<?= _('Content') ?>"
   ></bbns-column>
   <bbns-column :field="cfg.arch.notifications.read"
-               title="<?= _('Read') ?>"
+               label="<?= _('Read') ?>"
                type="datetime"
                cls="bbn-c"
   ></bbns-column>
   <bbns-column :field="cfg.arch.notifications.web"
-               title="<?= _('In-App') ?>"
+               label="<?= _('In-App') ?>"
                type="datetime"
                cls="bbn-c"
   ></bbns-column>
   <bbns-column :field="cfg.arch.notifications.browser"
-               title="<?= _('Browser') ?>"
+               label="<?= _('Browser') ?>"
                type="datetime"
                cls="bbn-c"
   ></bbns-column>
   <bbns-column :field="cfg.arch.notifications.mail"
-               title="<?= _('Mail') ?>"
+               label="<?= _('Mail') ?>"
                type="datetime"
                cls="bbn-c"
   ></bbns-column>
   <bbns-column :field="cfg.arch.notifications.mobile"
-               title="<?= _('Mobile') ?>"
+               label="<?= _('Mobile') ?>"
                type="datetime"
                cls="bbn-c"
   ></bbns-column>

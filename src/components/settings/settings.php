@@ -100,12 +100,12 @@
                        ref="table"
                        :autobind="false"
             >
-              <bbns-column title="<?= _('Name') ?>"
+              <bbns-column label="<?= _('Name') ?>"
                           field="text"
                           cls="bbn-c"
                           :editable="false"
               ></bbns-column>
-              <bbns-column title="<?= _('In-App') ?>"
+              <bbns-column label="<?= _('In-App') ?>"
                           field="web"
                           type="boolean"
                           cls="bbn-c"
@@ -114,7 +114,7 @@
                             novalue: false
                           }"
               ></bbns-column>
-              <bbns-column title="<?= _('Browser') ?>"
+              <bbns-column label="<?= _('Browser') ?>"
                           field="browser"
                           type="boolean"
                           cls="bbn-c"
@@ -123,13 +123,13 @@
                             novalue: false
                           }"
               ></bbns-column>
-              <bbns-column title="<?= _('Mail') ?>"
+              <bbns-column label="<?= _('Mail') ?>"
                           field="mail"
                           cls="bbn-c"
                           :render="renderMail"
                           :source="mailSource"
               ></bbns-column>
-              <bbns-column title="<?= _('Mobile') ?>"
+              <bbns-column label="<?= _('Mobile') ?>"
                           field="mobile"
                           type="boolean"
                           cls="bbn-c"
