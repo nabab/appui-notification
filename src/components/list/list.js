@@ -148,15 +148,15 @@
   <div class="bbn-flex-width">
     <div class="bbn-flex-fill" @click="cp.openNotification(source)">
       <div class="bbn-grid-fields">
-        <i class="nf nf-mdi-calendar bbn-middle"></i>
+        <i class="nf nf-md-calendar bbn-middle"></i>
         <div class="bbn-s"
               v-text="cp.formatDateTime(source.creation)"
         ></div>
-        <i class="nf nf-mdi-format_title bbn-middle"></i>
+        <i class="nf nf-md-format_title bbn-middle"></i>
         <div class="bbn-b"
               v-html="source.title"
         ></div>
-        <i class="nf nf-mdi-tooltip_text bbn-middle"></i>
+        <i class="nf nf-md-tooltip_text bbn-middle"></i>
         <div class="bbn-ellipsis"
               v-text="cp.html2text(source.content)"
         ></div>

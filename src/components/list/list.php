@@ -10,12 +10,12 @@
                      title="<?= _('Filter notifications') ?>"
         ></bbn-context>
         <span class="bbn-b bbn-flex-fill bbn-c"><?= _('LIST') ?></span>
-        <i class="nf nf-mdi-read bbn-m bbn-p"
+        <i class="nf nf-md-read bbn-m bbn-p"
            title="<?= _('Set all notifications as read') ?>"
            @click="setAllRead"
         ></i>
         <i v-if="toRead.length"
-           class="nf nf-mdi-marker_check bbn-m bbn-p bbn-left-sspace"
+           class="nf nf-md-marker_check bbn-m bbn-p bbn-left-sspace"
            title="<?= _('Set the selected notifications as read') ?>"
            @click="setRead"
         ></i>
@@ -60,7 +60,7 @@
               <div class="bbn-spadding">
                 <div class="appui-notification-list-notification-notified">
                   <div>
-                    <i :class="['nf nf-mdi-web', 'bbn-xxxl', {
+                    <i :class="['nf nf-md-web', 'bbn-xxxl', {
                           'bbn-green': selected.web,
                           'bbn-red': !selected.web
                         }]"
@@ -76,7 +76,7 @@
                     ></i>
                   </div>
                   <div>
-                    <i :class="['nf nf-mdi-email', 'bbn-xxxl', {
+                    <i :class="['nf nf-md-email', 'bbn-xxxl', {
                           'bbn-green': selected.mail,
                           'bbn-red': !selected.mail
                         }]"
@@ -93,11 +93,11 @@
                   </div>
                   <div v-if="selected.web">
                     <div class="bbn-c">
-                      <i class="nf nf-mdi-calendar bbn-right-xspace"></i>
+                      <i class="nf nf-md-calendar bbn-right-xspace"></i>
                       <span v-text="formatDate(selected.web, true)"></span>
                     </div>
                     <div class="bbn-c">
-                      <i class="nf nf-mdi-clock bbn-right-xspace"></i>
+                      <i class="nf nf-md-clock bbn-right-xspace"></i>
                       <span v-text="formatTime(selected.web, true)"></span>
                     </div>
                   </div>
@@ -106,11 +106,11 @@
                   </div>
                   <div v-if="selected.browser">
                     <div class="bbn-c">
-                      <i class="nf nf-mdi-calendar bbn-right-xspace"></i>
+                      <i class="nf nf-md-calendar bbn-right-xspace"></i>
                       <span v-text="formatDate(selected.browser, true)"></span>
                     </div>
                     <div class="bbn-c">
-                      <i class="nf nf-mdi-clock bbn-right-xspace"></i>
+                      <i class="nf nf-md-clock bbn-right-xspace"></i>
                       <span v-text="formatTime(selected.browser, true)"></span>
                     </div>
                   </div>
@@ -119,11 +119,11 @@
                   </div>
                   <div v-if="selected.mail">
                     <div class="bbn-c">
-                      <i class="nf nf-mdi-calendar bbn-right-xspace"></i>
+                      <i class="nf nf-md-calendar bbn-right-xspace"></i>
                       <span v-text="formatDate(selected.mail, true)"></span>
                     </div>
                     <div class="bbn-c">
-                      <i class="nf nf-mdi-clock bbn-right-xspace"></i>
+                      <i class="nf nf-md-clock bbn-right-xspace"></i>
                       <span v-text="formatTime(selected.mail, true)"></span>
                     </div>
                   </div>
@@ -132,11 +132,11 @@
                   </div>
                   <div v-if="selected.mobile">
                     <div class="bbn-c">
-                      <i class="nf nf-mdi-calendar bbn-right-xspace"></i>
+                      <i class="nf nf-md-calendar bbn-right-xspace"></i>
                       <span v-text="formatDate(selected.mobile, true)"></span>
                     </div>
                     <div class="bbn-c">
-                      <i class="nf nf-mdi-clock bbn-right-xspace"></i>
+                      <i class="nf nf-md-clock bbn-right-xspace"></i>
                       <span v-text="formatTime(selected.mobile, true)"></span>
                     </div>
                   </div>

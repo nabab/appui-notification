@@ -3,7 +3,7 @@
         :title="notificationsTitle"
         class="bbn-p bbn-rel"
   >
-    <i :class="['nf nf-mdi-comment_alert_outline', {'bbn-right-sspace': !!unread}]"></i>
+    <i :class="['nf nf-md-comment_alert_outline', {'bbn-right-sspace': !!unread}]"></i>
     <span v-if="unread"
           class="bbn-xs bbn-badge bbn-bg-blue bbn-white appui-notification-tray-badge"
           v-text="unread"
@@ -22,19 +22,19 @@
       </div>
       <div class="bbn-vmiddle">
         <div>
-          <i class="bbn-p nf nf-mdi-read bbn-m"
+          <i class="bbn-p nf nf-md-read bbn-m"
              @click="readAll"
              :title="_('Mark all notifications as read')"
           ></i>
         </div>
         <div>
-          <i class="bbn-p nf nf-mdi-arrow_expand bbn-m bbn-hsmargin"
+          <i class="bbn-p nf nf-md-arrow_expand bbn-m bbn-hsmargin"
              @click="openNotifications"
              :title="_('Open notifications page')"
           ></i>
         </div>
         <div>
-          <i class="bbn-p nf nf-mdi-window_close bbn-m"
+          <i class="bbn-p nf nf-md-window_close bbn-m"
             @click="isVisible = false"
             :title="_('Close')"
           ></i>

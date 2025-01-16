@@ -14,7 +14,7 @@ if ( $list = $ctrl->inc->options->fullOptions('page/', 'access', 'permissions', 
 }
 $notifications = new \bbn\Appui\Notification($ctrl->db);
 $ctrl
-  ->setIcon('nf nf-mdi-comment_alert_outline')
+  ->setIcon('nf nf-md-comment_alert_outline')
   ->combo(_('Notifications'), [
     'permissions' => $perms,
     'cfg' => $notifications->getClassCfg()

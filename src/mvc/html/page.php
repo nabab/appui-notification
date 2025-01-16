@@ -17,7 +17,7 @@
                   :fixed="true"
                   :load="true"
                   component="appui-notification-settings"
-                  icon="nf nf-mdi-settings"
+                  icon="nf nf-md-settings"
                   :notext="true"
                   v-if="source.permissions.settings"
   ></bbns-container>
@@ -25,7 +25,7 @@
                   label="<?= _("All notifications") ?>"
                   :fixed="true"
                   :load="true"
-                  icon="nf nf-mdi-table"
+                  icon="nf nf-md-table"
                   :notext="true"
                   v-if="source.permissions.all"
   ></bbns-container>

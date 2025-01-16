@@ -116,21 +116,21 @@
   <div class="bbn-flex-width">
     <div class="bbn-flex-fill" @click="select">
       <div class="bbn-grid-fields">
-        <i class="nf nf-mdi-calendar bbn-middle"></i>
+        <i class="nf nf-md-calendar bbn-middle"></i>
         <div class="bbn-s"
               v-text="formatDateTime(source.creation)"/>
-        <i class="nf nf-mdi-format_title bbn-middle"/>
+        <i class="nf nf-md-format_title bbn-middle"/>
         <div :class="['bbn-b', {'bbn-ellipsis': !isSelected}]"
               v-html="isSelected ? source.title : html2text(source.title)"
               :style="{whiteSpace: isSelected ? 'normal' : ''}"/>
-        <i class="nf nf-mdi-tooltip_text bbn-middle"/>
+        <i class="nf nf-md-tooltip_text bbn-middle"/>
         <div :class="{'bbn-ellipsis': !isSelected}"
               v-html="isSelected ? source.content : html2text(source.content)"
               :style="{whiteSpace: isSelected ? 'normal' : ''}"/>
       </div>
     </div>
     <div class="bbn-middle">
-      <bbn-button icon="nf nf-mdi-marker_check"
+      <bbn-button icon="nf nf-md-marker_check"
                   :notext="true"
                   @click="read"
                   title="` + bbn._('Mark it as read') + `"/>
