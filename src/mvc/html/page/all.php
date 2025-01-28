@@ -6,15 +6,15 @@
 >
   <bbns-column :field="cfg.arch.notifications.id"
                label="<?= _('ID') ?>"
-               :hidden="true"
+               :invisible="true"
   ></bbns-column>
   <bbns-column :field="cfg.arch.notifications.id_content"
                label="<?= _('ID Content') ?>"
-               :hidden="true"
+               :invisible="true"
   ></bbns-column>
   <bbns-column :field="cfg.arch.content.id_option"
                label="<?= _('ID Option') ?>"
-               :hidden="true"
+               :invisible="true"
   ></bbns-column>
   <bbns-column :field="cfg.arch.content.creation"
                label="<?= _('Creation') ?>"
