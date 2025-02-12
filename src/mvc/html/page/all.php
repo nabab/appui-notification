@@ -59,7 +59,7 @@
   <bbns-column :buttons="[{
                   text: '<?= _('Delete') ?>',
                   notext: true,
-                  action: remove,
+                  action: removeItem,
                   icon: 'nf nf-fa-trash'
                 }]"
                 cls="bbn-c"

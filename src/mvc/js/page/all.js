@@ -14,7 +14,7 @@
       }
     },
     methods: {
-      remove(row){
+      removeItem(row){
         if (row[this.cfg.arch.notifications.id]) {
           this.confirm(bbn._('Are you sure you want to delete this notification?'), () => {
             this.post(this.root + 'actions/remove', {id: row[this.cfg.arch.notifications.id]}, d => {
