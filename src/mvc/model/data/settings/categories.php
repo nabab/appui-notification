@@ -11,8 +11,8 @@ if (($notifications = new \bbn\Appui\Notification($model->db))
         'text' => $o['text']
       ], $notifications->getCfg($id_user, $o['id']));
     }, array_values(array_filter($model->inc->options->fullOptions('list', 'notification', 'appui'), function($o) use($model){
-      $id_perm = $model->db->selectOne('bbn_options', 'id', ['code' => 'opt'.$o['id']]);
-      return $id_perm && $model->inc->perm->hasDeep($id_perm, 'options');
+      $id_perm = $model->inc->perm->optionToPermission($o['id']);
+      return $id_perm && $model->inc->perm->has($id_perm);
     })))
   ];
 }
