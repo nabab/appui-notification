@@ -5,25 +5,21 @@
     <bbn-checkbox v-model="source.global.web"
                   :value="true"
                   :novalue="false"
-                  class="bbn-right-space"
-    ></bbn-checkbox>
+                  class="bbn-right-space"/>
     <span class="bbn-right-sspace"><?= _('Browser') ?></span>
     <bbn-checkbox v-model="source.global.browser"
                   :value="true"
                   :novalue="false"
-                  class="bbn-right-space"
-    ></bbn-checkbox>
+                  class="bbn-right-space"/>
     <span class="bbn-right-sspace"><?= _('Mail') ?></span>
     <bbn-dropdown :source="mailSource"
                   v-model="source.global.mail"
-                  class="bbn-right-space"
-    ></bbn-dropdown>
+                  class="bbn-right-space"/>
     <span class="bbn-right-sspace"><?= _('Mobile') ?></span>
     <bbn-checkbox :disabled="true"
                   v-model="source.global.mobile"
                   :value="true"
-                  :novalue="false"
-    ></bbn-checkbox>
+                  :novalue="false"/>
   </div>
   <div class="bbn-flex-fill">
     <bbn-splitter orientation="horizontal">
@@ -35,28 +31,23 @@
               <div class="bbn-flex-fill">
                 <div class="bbn-overlay bbn-middle bbn-alt-background">
                   <div v-if="categoryIsSelected"
-                       class="bbn-grid-fields bbn-spadding bbn-vmiddle"
-                  >
+                       class="bbn-grid-fields bbn-spadding bbn-vmiddle">
                     <span><?= _('In-App') ?></span>
                     <bbn-checkbox v-model="category.web"
                                   :value="true"
-                                  :novalue="false"
-                    ></bbn-checkbox>
+                                  :novalue="false"/>
                     <span><?= _('Browser') ?></span>
                     <bbn-checkbox v-model="category.browser"
                                   :value="true"
-                                  :novalue="false"
-                    ></bbn-checkbox>
+                                  :novalue="false"/>
                     <span><?= _('Mail') ?></span>
                     <bbn-dropdown :source="mailSource"
-                                  v-model="category.mail"
-                    ></bbn-dropdown>
+                                  v-model="category.mail"/>
                     <span><?= _('Mobile') ?></span>
                     <bbn-checkbox :disabled="true"
                                   v-model="category.mobile"
                                   :value="true"
-                                  :novalue="false"
-                    ></bbn-checkbox>
+                                  :novalue="false"/>
                   </div>
                   <div v-else><?= _('No category selected') ?></div>
                 </div>
@@ -73,8 +64,7 @@
                             children=""
                             source-value="id_option"
                             @select="selectCategory"
-                            ref="list"
-                  ></bbn-list>
+                            ref="list"/>
                 </bbn-scroll>
               </div>
             </div>
@@ -84,8 +74,7 @@
       <bbn-pane>
         <div class="bbn-flex-height">
           <div v-if="categoryIsSelected"
-               class="bbn-header bbn-b bbn-c bbn-s bbn-spadding bbn-no-border-top bbn-no-border-bottom bbn-no-border-left"
-          >
+               class="bbn-header bbn-b bbn-c bbn-s bbn-spadding bbn-no-border-top bbn-no-border-bottom bbn-no-border-left">
             <span v-text="category.text.toUpperCase() + ' '"></span><?= _('NOTIFICATIONS') ?>
           </div>
           <div class="bbn-flex-fill">
@@ -98,13 +87,11 @@
                        :expanded="true"
                        @saverow="saveIndividual"
                        ref="table"
-                       :autobind="false"
-            >
+                       :autobind="false">
               <bbns-column label="<?= _('Name') ?>"
                           field="text"
                           cls="bbn-c"
-                          :editable="false"
-              ></bbns-column>
+                          :editable="false"/>
               <bbns-column label="<?= _('In-App') ?>"
                           field="web"
                           type="boolean"
@@ -112,8 +99,7 @@
                           :options="{
                             value: true,
                             novalue: false
-                          }"
-              ></bbns-column>
+                          }"/>
               <bbns-column label="<?= _('Browser') ?>"
                           field="browser"
                           type="boolean"
@@ -121,14 +107,12 @@
                           :options="{
                             value: true,
                             novalue: false
-                          }"
-              ></bbns-column>
+                          }"/>
               <bbns-column label="<?= _('Mail') ?>"
                           field="mail"
                           cls="bbn-c"
                           :render="renderMail"
-                          :source="mailSource"
-              ></bbns-column>
+                          :source="mailSource"/>
               <bbns-column label="<?= _('Mobile') ?>"
                           field="mobile"
                           type="boolean"
@@ -137,16 +121,13 @@
                           :options="{
                             value: true,
                             novalue: false
-                          }"
-              ></bbns-column>
+                          }"/>
               <bbns-column :buttons="[]"
                             :width="80"
-                            cls="bbn-c"
-              ></bbns-column>
+                            cls="bbn-c"/>
             </bbn-table>
             <div v-else
-                 class="bbn-middle bbn-overlay"
-            >
+                 class="bbn-middle bbn-overlay">
               <span class="bbn-xl bbn-b"><i class="nf nf-fa-arrow_left bbn-right-space"></i><?= _('Select a category') ?></span>
             </div>
           </div>
