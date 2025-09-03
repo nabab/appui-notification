@@ -41,7 +41,7 @@
       receive(data){
         let list = this.getRef('list');
         if ('web' in data) {
-          if (!bbn.fn.isVue(list)) {
+          if (!bbn.cp.isComponent(list)) {
             bbn.fn.each(bbn.fn.order(data.web, 'creation', 'ASC'), n => appui.info({
               content: n.title ? `<div class="bbn-b">${n.title}</div><div>${n.content}</div>` : n.content,
               data: n,
@@ -67,7 +67,7 @@
         if ('unread' in data) {
           this.unread = data.unread.length;
           this.current.splice(0, this.current.length, ...data.unread);
-          if (bbn.fn.isVue(list)) {
+          if (bbn.cp.isComponent(list)) {
             list.updateData();
           }
         }
@@ -169,7 +169,7 @@
               this.post(this.cp.root + 'actions/read', {id: this.source.id}, d => {
                 if (d.success) {
                   let list = this.cp.getRef('list');
-                  if (bbn.fn.isVue(list)) {
+                  if (bbn.cp.isComponent(list)) {
                     this.cp.getRef('list').updateData();
                   }
                   appui.success();
