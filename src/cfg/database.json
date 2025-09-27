@@ -116,48 +116,33 @@
       },
       "dt_web": {
         "type": "datetime",
-        "null": 1,
         "extra": "VIRTUAL GENERATED",
         "virtual": true,
-        "generation": "from_unixtime(`web`)",
-        "default": "NULL",
-        "defaultExpression": 1
+        "generation": "from_unixtime(`web`)"
       },
       "dt_browser": {
         "type": "datetime",
-        "null": 1,
         "extra": "VIRTUAL GENERATED",
         "virtual": true,
-        "generation": "from_unixtime(`browser`)",
-        "default": "NULL",
-        "defaultExpression": 1
+        "generation": "from_unixtime(`browser`)"
       },
       "dt_mail": {
         "type": "datetime",
-        "null": 1,
         "extra": "VIRTUAL GENERATED",
         "virtual": true,
-        "generation": "from_unixtime(`mail`)",
-        "default": "NULL",
-        "defaultExpression": 1
+        "generation": "from_unixtime(`mail`)"
       },
       "dt_mobile": {
         "type": "datetime",
-        "null": 1,
         "extra": "VIRTUAL GENERATED",
         "virtual": true,
-        "generation": "from_unixtime(`mobile`)",
-        "default": "NULL",
-        "defaultExpression": 1
+        "generation": "from_unixtime(`mobile`)"
       },
       "dt_read": {
         "type": "datetime",
-        "null": 1,
         "extra": "VIRTUAL GENERATED",
         "virtual": true,
-        "generation": "from_unixtime(`read`)",
-        "default": "NULL",
-        "defaultExpression": 1
+        "generation": "from_unixtime(`read`)"
       }
     }
   },
