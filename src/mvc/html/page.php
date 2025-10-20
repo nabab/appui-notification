@@ -1,7 +1,7 @@
 <!-- HTML Document -->
 <bbn-router class="appui-notfications"
             :autoload="false"
-            :nav="true"
+            mode="tabs"
 >
   <bbns-container url="list"
                   label="<?= _("Notifications list") ?>"
