@@ -157,7 +157,7 @@
           html2text: bbn.fn.html2text,
           formatDateTime(date){
             if (date) {
-              return bbn.date(date).format('DD/MM/YYYY HH:mm')
+              return bbn.dt(date).format('DD/MM/YYYY HH:mm')
             }
             return ''
           },
